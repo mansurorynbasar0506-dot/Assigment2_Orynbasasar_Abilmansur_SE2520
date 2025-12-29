@@ -1,13 +1,25 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-  //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-  // to see how IntelliJ IDEA suggests fixing it.
-  IO.println(String.format("Hello and welcome!"));
+public class Main {
 
-  for (int i = 1; i <= 5; i++) {
-    //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-    // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-    IO.println("i = " + i);
-  }
+    public static void main(String[] args) {
+
+        Driver driver1 = new Driver("Abilmansur", "55111");
+        Driver driver2 = new Driver("Bekzat", "23222");
+
+        Vehicle car = new Car("Toyota", 2022);
+        Vehicle bike = new Motorcycle("Yamaha", 2021);
+        Vehicle truck = new Truck("BMW M5", 2020);
+
+        car.setDriver(driver1);
+        bike.setDriver(driver1);
+        truck.setDriver(driver2);
+
+        Vehicle[] vehicles = {car, bike, truck};
+
+        for (int i = 0; i < vehicles.length; i++) {
+            vehicles[i].startEngine();
+            vehicles[i].displayInfo();
+            vehicles[i].stopEngine();
+            System.out.println("-------------");
+        }
+    }
 }

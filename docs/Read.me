@@ -1,0 +1,56 @@
+# Vehicle Management System
+
+## Project Overview
+This project is a simple Java program that shows basic Object-Oriented
+Programming concepts.
+The program works with different types of vehicles and drivers.
+
+The main goal of this project is to practice inheritance, abstraction,
+and working with objects in Java.
+
+---
+
+## Used OOP Concepts
+
+### Inheritance
+The class `Vehicle` is a parent class.
+The classes `Car`, `Motorcycle`, and `Truck` are child classes.
+They inherit common fields like brand and year from `Vehicle`.
+
+### Abstraction
+`Vehicle` is an abstract class.
+It has abstract methods `startEngine()` and `stopEngine()`.
+Each vehicle class implements these methods in its own way.
+
+### Composition and Aggregation
+Each vehicle has a driver.
+One driver can be used for more than one vehicle.
+
+---
+
+## Class List
+- Vehicle (abstract)
+- Car
+- Motorcycle
+- Truck
+- Driver
+- Main
+
+---
+
+---
+
+## Program Behavior
+The program creates several vehicles and drivers.
+All vehicles are stored in an array.
+Using a loop, the program starts the engine, shows vehicle information,
+shows driver information, and stops the engine.
+
+---
+
+## Reflection
+Inheritance made the program simpler because common code is written
+only once in the parent class.
+Method overriding helped each vehicle have its own behavior.
+The most difficult part was understanding abstract classes and how
+to use the `super` keyword.

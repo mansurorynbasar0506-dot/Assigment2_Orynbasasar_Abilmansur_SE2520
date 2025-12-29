@@ -1,4 +1,14 @@
-package PACKAGE_NAME;
+public class Motorcycle extends Vehicle {
 
-public class Motorcycle {
+    public Motorcycle(String brand, int year) {
+        super(brand, year);
+    }
+
+    public void startEngine() {
+        System.out.println("Motorcycle engine started");
+    }
+
+    public void stopEngine() {
+        System.out.println("Motorcycle engine stopped");
+    }
 }
